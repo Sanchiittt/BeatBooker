@@ -1,13 +1,19 @@
 import React from "react";
+import Image from "next/image";
 
 const HeroSection: React.FC = () => {
   return (
     <section className="relative h-[90vh] overflow-hidden flex items-center justify-center text-center px-6 md:px-12">
-      <img
-        src="/dj-hero.jpg"
-        alt="DJ Performing"
-        className="absolute inset-0 w-full h-full object-cover opacity-30"
-      />
+     
+
+// later inside JSX:
+<Image
+  src="/dj-hero.jpg"
+  alt="DJ Performing"
+  fill
+  className="object-cover opacity-30"
+/>
+
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-purple-900/70 to-black/80" />
 
       <div className="z-10 text-center max-w-3xl">
