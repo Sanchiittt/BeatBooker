@@ -11,7 +11,8 @@ const Testimonials: React.FC = () => {
       name: "Tata Tech HR",
     },
     {
-      quote: "Literally the best party DJ we have ever hired. Period.",
+      quote: 'Literally the best party DJ we\'ve ever hired. Period.',
+
       name: "Manish (Event Planner)",
     },
   ];
