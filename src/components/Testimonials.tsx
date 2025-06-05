@@ -26,7 +26,8 @@ const Testimonials: React.FC = () => {
             key={name}
             className="bg-white/5 border border-purple-900 p-6 rounded-xl shadow-md"
           >
-            <p className="text-lg text-purple-200 italic">"{quote}"</p>
+            <p className="text-lg text-purple-200 italic">&quot;{quote}&quot;</p>
+
             <p className="mt-3 text-sm text-purple-400 font-medium">— {name}</p>
           </div>
         ))}
