@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => {
     <section className="relative h-[90vh] overflow-hidden flex items-center justify-center text-center px-6 md:px-12">
      
 
-// later inside JSX:
+
 <Image
   src="/dj-hero.jpg"
   alt="DJ Performing"
