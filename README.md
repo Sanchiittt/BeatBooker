@@ -187,4 +187,4 @@ npm run dev
   * [Next.js Docs](https://nextjs.org/docs)
   * [Tailwind CSS Docs](https://tailwindcss.com/docs)
   * [Penpot](https://penpot.app)
-* 
+ 
