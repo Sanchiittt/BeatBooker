@@ -76,7 +76,8 @@ const HeroSection: React.FC = () => {
           Gold Vibes. Bold Beats.
         </h2>
         <p className="mt-6 text-xl text-yellow-200">
-          Elevating every event with DJ Goldbeard's signature sound.
+          Elevating every event with DJ Goldbeard&apos;s
+ signature sound.
         </p>
 
         {/* ✅ Link to booking page */}
