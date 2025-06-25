@@ -1,27 +1,4 @@
-// import React from "react";
-// import Image from "next/image";
 
-// const Footer: React.FC = () => {
-//   return (
-//     <footer className="py-8 text-center border-t border-white/10 backdrop-blur-md">
-//       <p className="mb-4">
-//         &copy; {new Date().getFullYear()} DJ Goldbeard. All rights reserved.
-//       </p>
-//       <div className="flex justify-center gap-6 text-xl">
-//         <a href="https://odysee.com/@DJGoldbeard:3" className="hover:text-yellow-300 transition flex items-center gap-2"><Image src="/assets/odyseelogo.png" alt="Gram Logo" width={20} height={20} />odysee</a>
-
-//         <a href="https://gram.social/dj_goldbeard" className="hover:text-yellow-300 transition flex items-center gap-2">
-//           <Image src="/assets/gramlogo.svg" alt="Gram Logo" width={20} height={20} />
-//           Gram
-//         </a>
-
-//         {/* <a href="#" className="hover:text-purple-300 transition">📞 WhatsApp</a> */}
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
 
 
 

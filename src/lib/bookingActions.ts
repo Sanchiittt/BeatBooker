@@ -75,3 +75,27 @@ export async function addBooking(bookingData: BookingData) {
     );
   }
 }
+
+
+
+export async function getAllBookings() {
+  try {
+    const { data, error } = await supabase.from("bookings").select("*").order("event_date", { ascending: true });
+
+    if (error) {
+      console.error("Fetch error:", error);
+      throw new Error("Failed to fetch bookings");
+    }
+
+    return data;
+  } catch (err) {
+    console.error("Unexpected error:", err);
+    return [];
+  }
+}
+
+
+export async function deleteBooking(id: number) {
+  const { error } = await supabase.from("bookings").delete().eq("id", id);
+  if (error) throw new Error(error.message);
+}
