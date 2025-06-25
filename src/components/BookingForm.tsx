@@ -396,16 +396,54 @@ const BookingForm: React.FC = () => {
     resolver: zodResolver(BookingSchema),
   });
 
-  const onSubmit = async (data: BookingFormData) => {
-    try {
-      await addBooking(data);
-      alert("🎉 Booking saved!");
-      reset(); // Optional: clear form after submit
-    } catch (error) {
-      console.error("Failed to save booking:", error);
-      alert("❌ Booking failed. Please try again.");
-    }
-  };
+  // const onSubmit = async (data: BookingFormData) => {
+  //   try {
+  //     await addBooking(data);
+  //     alert("🎉 Booking saved!");
+  //     reset(); // Optional: clear form after submit
+  //   } catch (error) {
+  //     console.error("Failed to save booking:", error);
+  //     alert("❌ Booking failed. Please try again.");
+  //   }
+  // };
+
+  
+  
+  
+//   const onSubmit = async (data: BookingFormData) => {
+//   try {
+//     console.log("Sending to server:", data);
+//     await addBooking({
+//       ...data,
+//       eventDate: new Date(data.eventDate), // ensure it's proper Date
+//     });
+//     alert("🎉 Booking saved!");
+//   } catch (error) {
+//     console.error("🔥 INSERT FAILED:", error);
+//     alert("❌ Booking failed.");
+//   }
+// };
+
+
+
+
+
+// BookingForm.tsx
+const onSubmit = async (data: BookingFormData) => {
+  try {
+    console.log('Form data before submission:', data);
+    await addBooking({
+      ...data,
+      eventDate: data.eventDate // Ensure this is a Date object
+    });
+    alert("🎉 Booking saved successfully!");
+    reset();
+  } catch (error) {
+    console.error('Form submission error:', error);
+    alert(`❌ Booking failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  }
+};
+
 
   return (
     <section
